@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><template></template></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+
 <!-- Hero Section -->
 <section class="hero-image-laptop">
   <div class="hero-overlay-text" id="heroOverlayText">
     <h1>SMART - EMS</h1>
-    <p>Ambulance operation control</p>
+    <p>Ambulance Operation Control</p>
   </div>
   <div class="laptop-anim-container bottom-anim">
     <img src="assets/smartEMS.png" alt="EMS Dashboard" class="laptop-anim-img bottom-anim-img">
@@ -21,12 +25,12 @@
 <!-- Hero Info Card -->
 <div class="hero-info-card">
   <h2>SMART - EMS</h2>
-  <h3>Ambulance operation control</h3>
+  <h3>Ambulance Operation Control</h3>
   <p>The EMS-LIFE System is an intelligent emergency medical service designed to enhance the efficiency and effectiveness of healthcare in emergency situations. This system integrates advanced information and communication technologies to expedite and optimize the delivery of emergency medical care.</p>
-  <h4>Smart Navigation and Mapping Utilizing GPS and navigation systems</h4>
-  <p>The ambulance is equipped with a robust communication system</p>
-  <p>Sensors and monitoring devices inside the ambulance track</p>
-  <p>Alerts and Data Management System can send alerts to the medical team</p>
+  <h4>Smart Navigation and Mapping Utilizing GPS and Navigation Systems</h4>
+  <p>The ambulance is equipped with a robust communication system.</p>
+  <p>Sensors and monitoring devices inside the ambulance track patient status in real time.</p>
+  <p>The Alerts and Data Management System can send alerts to the medical team.</p>
 </div>
 
 </section>
@@ -57,7 +61,7 @@
 <!-- Animated Map Section -->
 <section class="map-section">
   <div class="container">
-    <h2>แผนที่ผู้ใช้งาน</h2>
+    <h2>User Map</h2>
     <div class="map-container">
       <img src="assets/maps-mock.png" alt="World Map" class="map-image">
       <span class="map-pin" style="top: 30%; left: 20%; animation-delay: 0.1s;"></span>
@@ -74,52 +78,131 @@
   </div>
 </section>
 
+
+<!-- Monitor Zoom Section -->
+<section class="monitor-zoom-section">
+  <div class="monitor-zoom-container">
+    <img src="assets/minitor.png" alt="Monitor" class="monitor-zoom-img" id="monitorZoomImg">
+  </div>
+</section>
+ 
+
+<!-- Apple-style Card Carousel Section -->
+<section class="apple-carousel-section">
+  <div class="container">
+    <h2 class="carousel-title">Ambulance Solution</h2>
+    <div class="apple-carousel">
+      <div class="carousel-fade left"></div>
+      <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-card dark-card">
+          <img src="assets/card/phone.png" alt="Phone" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">
+              Push to talk<br>
+              Paramedic Data Entry<br>
+              Image Capture 
+            </h3>
+          </div>
+        </div>
+        <div class="carousel-card dark-card">
+          <img src="assets/card/1.png" alt="Card 1" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Vital sign stream monitor</h3>
+          </div>
+        </div>
+        <div class="carousel-card dark-card">
+          <img src="assets/card/2.png" alt="Card 2" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Vital sign stream monitor</h3>
+          </div>
+        </div>
+        <div class="carousel-card dark-card">
+          <img src="assets/card/3.png" alt="Card 3" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Vital sign stream monitor</h3>
+          </div>
+        </div>
+        <div class="carousel-card dark-card">
+          <img src="assets/card/Mobile DVR.png" alt="Mobile DVR" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Mobile DVR</h3>
+          </div>
+        </div>
+        <div class="carousel-card dark-card">
+          <img src="assets/card/Patient Identification.png" alt="Patient Identification" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Patient Identification</h3>
+          </div>
+        </div>
+        <div class="carousel-card dark-card">
+          <img src="assets/card/Video Laryngoscope.png" alt="Video Laryngoscope" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Video Laryngoscope</h3>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-fade right"></div>
+    </div>
+    <div class="carousel-arrows-bottom">
+      <button class="carousel-arrow left" aria-label="Scroll Left" onclick="scrollCarousel(-1)">&lt;</button>
+      <button class="carousel-arrow right" aria-label="Scroll Right" onclick="scrollCarousel(1)">&gt;</button>
+    </div>
+  </div>
+</section>
+
+
 <!-- Partner Section -->
 <section class="partner-slider-section">
   <div class="container">
     <h2>Partner</h2>
     <div class="partner-slider">
       <div class="partner-slider-track">
-        <img src="assets/partner/Group-92494.png" alt="Partner 1">
-        <img src="assets/partner/Rectangle-163.png" alt="Partner 2">
-        <img src="assets/partner/Rectangle-164.png" alt="Partner 3">
-        <img src="assets/partner/Rectangle-166.png" alt="Partner 4">
-        <img src="assets/partner/Rectangle-1677.png" alt="Partner 5">
-        <img src="assets/partner/Rectangle-170.png" alt="Partner 6">
-        <img src="assets/partner/Rectangle-1711.png" alt="Partner 7">
-        <img src="assets/partner/ids-1-2048x1112.png" alt="Partner 8">
+        <img src="assets/partner/Group-92494.png" alt="Partner 1" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-163.png" alt="Partner 2" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-164.png" alt="Partner 3" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-166.png" alt="Partner 4" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-1677.png" alt="Partner 5" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-170.png" alt="Partner 6" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-1711.png" alt="Partner 7" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/ids-1-2048x1112.png" alt="Partner 8" style="background:#fff; padding:12px; border-radius:12px;">
         <!-- Repeat for infinite scroll -->
-        <img src="assets/partner/Group-92494.png" alt="Partner 1">
-        <img src="assets/partner/Rectangle-163.png" alt="Partner 2">
-        <img src="assets/partner/Rectangle-164.png" alt="Partner 3">
-        <img src="assets/partner/Rectangle-166.png" alt="Partner 4">
-        <img src="assets/partner/Rectangle-1677.png" alt="Partner 5">
-        <img src="assets/partner/Rectangle-170.png" alt="Partner 6">
-        <img src="assets/partner/Rectangle-1711.png" alt="Partner 7">
-        <img src="assets/partner/ids-1-2048x1112.png" alt="Partner 8">
+        <img src="assets/partner/Group-92494.png" alt="Partner 1" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-163.png" alt="Partner 2" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-164.png" alt="Partner 3" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-166.png" alt="Partner 4" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-1677.png" alt="Partner 5" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-170.png" alt="Partner 6" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/Rectangle-1711.png" alt="Partner 7" style="background:#fff; padding:12px; border-radius:12px;">
+        <img src="assets/partner/ids-1-2048x1112.png" alt="Partner 8" style="background:#fff; padding:12px; border-radius:12px;">
       </div>
     </div>
   </div>
 </section>
 
+
 <!-- Contact Form Section -->
 <section class="contact-form-section">
   <div class="container">
-    <h2>ติดต่อเรา</h2>
+    <h2>Contact Us</h2>
+    <div class="contact-details">
+      <p><strong>E.S.M.Solution Co., Ltd.</strong></p>
+      <p>942/88 Charn Issara Tower 1, 3rd Floor, Rama IV Road, Suriyawongse, Bangrak, Bangkok</p>
+      <p><strong>Email:</strong> sales(at)esm-solution.com</p>
+    </div>
     <form class="contact-form">
       <div class="form-group">
-        <label for="name">ชื่อ</label>
+        <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
       </div>
       <div class="form-group">
-        <label for="email">อีเมล</label>
+        <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
       </div>
       <div class="form-group">
-        <label for="message">ข้อความ</label>
+        <label for="message">Message</label>
         <textarea id="message" name="message" rows="4" required></textarea>
       </div>
-      <button type="submit">ส่งข้อความ</button>
+      <button type="submit">Send Message</button>
     </form>
   </div>
 </section>
